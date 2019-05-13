@@ -2,12 +2,12 @@
 <html> 
 <head> 
 <meta charset="utf-8"> 
-<title>parse html</title> 
+<title>Parse HTML</title> 
 <meta content='width=device-width, initial-scale=1' name='viewport'> 
 </head> 
 <table style="margin: 0 auto;"><tbody>
 <tr> <td><textarea id="4lf1" style="background: none repeat scroll 0% 0%; border: 1px solid; height: 300px; width: 300px;"></textarea>
-<button class="btn" onclick="convert()">Encode</button> <button class="btn" onclick="copas()">Copy Text</button>  <button class="btn" onclick="decode()">Decode</button></td> </tr>
+<input type="button" style="padding: 5px;" onclick="convert()" value="Encode"/> <input type="button" style="padding: 5px;" onclick="copas()" value="Copy Text"/>  <input type="button" style="padding: 5px;" onclick="decode()" value="Decode"/></td> </tr>
 </tbody></table>
 <script type="text/javascript">function convert(){var ele1 = document.getElementById("4lf1");var replaced;replaced = ele1.value;replaced = replaced.replace(/&/ig, "&amp;");replaced = replaced.replace(/</ig, "&lt;");replaced = replaced.replace(/>/ig, "&gt;");replaced = replaced.replace(/"/ig, "&quot;");ele1.value = replaced;}
 function decode(){var ele2 = document.getElementById('4lf1');var replaced;replaced = ele2.value;replaced = replaced.replace(/&amp;/ig, '&');replaced = replaced.replace(/&lt;/ig, '<');replaced = replaced.replace(/&gt;/ig, '>');replaced = replaced.replace(/&quot;/ig, '"');ele2.value = replaced;}
